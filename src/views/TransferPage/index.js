@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useHistory } from "react-router-dom";
 // React Redux
 import { connect } from "react-redux";
-import { Grid, Typography, Button, Paper } from "@material-ui/core";
+import { Grid, Typography, Paper } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import InputNumber from "../../components/InputNumber";
 import InputSelect from "../../components/InputSelect";
