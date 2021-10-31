@@ -1,6 +1,14 @@
 import { render, fireEvent } from "@testing-library/react";
 import InputDate from "../components/InputDate";
 
+describe("Button Component", () => {
+    it("rendered Button", () => {
+      const { getByTestId } = render(<InputDate />);
+      const startDateInput = getByTestId("js-datepicker");
+      expect(startDateInput).toBeTruthy();
+    });
+  });
+
 describe("DatePicker", () => {
   test("Change datepicker value", () => {
     const { getByTestId } = render(<InputDate />);
