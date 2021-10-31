@@ -1,28 +1,16 @@
-import { GET_DATA, SET_DATA, SET_FILTER } from "./types";
+import { GET_ACCOUNTS, SAVE_FILTER } from "./types";
 
-export function getData() {
+export function getAccounts() {
   return {
-    type: GET_DATA,
-    async: true,
-    url: `https://jsonplaceholder.typicode.com/todos`,
-    method: "GET",
+    type: GET_ACCOUNTS,
   };
 }
 
-export function setData(data) {
+export function saveFilter(data) {
   return {
-    type: SET_DATA,
+    type: SAVE_FILTER,
     data: {
       data,
-    },
-  };
-}
-
-export function setFilter(filter) {
-  return {
-    type: SET_FILTER,
-    data: {
-      filter,
     },
   };
 }
