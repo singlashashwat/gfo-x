@@ -24,6 +24,7 @@ export default function InputDate({ label, value, setValue }) {
           onChange={handleDateChange}
           KeyboardButtonProps={{
             "aria-label": "change date",
+            ...{ ["data-testid"]: "js-datepicker" },
           }}
         />
       </Grid>

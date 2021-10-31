@@ -7,12 +7,16 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 In the project directory, you can run:
 ### 1.
 ### `npm install`
-
 Run to install the node dependencies
+
 ### 2.
+### `npm test`
+Run to perform test and see result
+
+### 3.
 ### `npm start`
 
-Runs the app in the development mode.\
+Runs the app in the development mode.
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.\

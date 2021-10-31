@@ -6,6 +6,7 @@ export default function TextArea({ value, setValue }) {
     <TextField
       multiline
       fullWidth
+      data-testid="textarea"
       minRows={2}
       maxRows={4}
       value={value}

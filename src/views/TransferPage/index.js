@@ -9,6 +9,7 @@ import InputSelect from "../../components/InputSelect";
 import TextArea from "../../components/TextArea";
 import InputDate from "../../components/InputDate";
 import { saveFilter } from "../../store/home/actions";
+import InputButton from "../../components/InputButton";
 
 const useStyles = makeStyles(() => ({
   heading: {
@@ -55,7 +56,7 @@ const TransferPage = (props) => {
       accountTo: accountTo,
     };
     console.log("transferData", body);
-    history.push("/")
+    history.push("/");
   };
 
   useEffect(() => {
@@ -125,14 +126,7 @@ const TransferPage = (props) => {
             <InputDate label={"Date"} value={date} setValue={setDate} />
           </Grid>
         </form>
-        <Button
-          color="primary"
-          type="submit"
-          form="user-modal-form"
-          variant="outlined"
-        >
-          Transfer
-        </Button>
+        <InputButton label={"Transfer"} />
       </Paper>
     </Grid>
   );

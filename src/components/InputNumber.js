@@ -13,9 +13,10 @@ export default function InputNumber({ label, setAmount, amount }) {
       InputLabelProps={{
         shrink: true,
       }}
+      inputProps={{ "data-testid": { label } }}
       onChange={(event) => setAmount(event.target.value)}
       variant="outlined"
-      error={ amount && amount <= 0 ? true : false}
+      error={amount && amount <= 0 ? true : false}
     />
   );
 }
