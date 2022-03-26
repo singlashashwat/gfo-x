@@ -1,14 +1,8 @@
-import { GET_ACCOUNTS, SAVE_FILTER } from "./types";
+import {  SAVE_USER } from "./types";
 
-export function getAccounts() {
+export function saveUser(data) {
   return {
-    type: GET_ACCOUNTS,
-  };
-}
-
-export function saveFilter(data) {
-  return {
-    type: SAVE_FILTER,
+    type: SAVE_USER,
     data: {
       data,
     },

@@ -1,21 +1,15 @@
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import { Provider } from "react-redux";
 import { store } from "../store/index";
-import Home from "../views/Home";
-import HistoryPage from "../views/HistoryPage";
-import TransferPage from "../views/TransferPage";
-import Header from "../components/Header";
+import HomePage from "../views/HomePage";
 
 function App() {
   return (
     <main>
       <Provider store={store}>
         <BrowserRouter>
-        <Header /> 
           <Switch>
-            <Route exact path="/" component={Home} />
-            <Route exact path="/history" component={HistoryPage} />
-            <Route exact path="/transfer" component={TransferPage} />
+            <Route exact path="/" component={HomePage} />
           </Switch>
         </BrowserRouter>
       </Provider>

@@ -1,15 +1,16 @@
-import { SAVE_FILTER } from "./types";
+import { SAVE_USER } from "./types";
 
 const initialDatasetState = {
-  filter: "accounts",
+  user: "",
   errorMessage: "",
 };
 
 export function dataReducer(state = initialDatasetState, action) {
+  debugger;
   switch (action.type) {
-    case SAVE_FILTER:
+    case SAVE_USER:
       return Object.assign({}, state, {
-        filter: action.data.data,
+        user: action.data.data,
       });
     default:
       return state;
