@@ -16,5 +16,5 @@ describe("TextArea Component", () => {
     const startDateInput = getByTestId("textarea");
     fireEvent.change(startDateInput, { target: { value: "" } });
     expect(startDateInput.value).toBe("");
-  });
+  }); 
 });
